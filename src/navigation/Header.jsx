@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = 
 [
     { name: 'jerax.frontend.dev@gmail.com', href: 'mailto:jerax.frontend.dev@gmail.com', current: true, isBtn: false },
-    { name: 'Download CV', href: './MyPersonalResume.pdf', current: false, isBtn: true },
+    { name: 'Download CV', href: './assets/MyPersonalResume.pdf', current: false, isBtn: true },
 ];
 
 const socialLinks =
