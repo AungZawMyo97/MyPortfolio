@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = 
 [
     { name: 'jerax.frontend.dev@gmail.com', href: 'mailto:jerax.frontend.dev@gmail.com', current: true, isBtn: false },
-    { name: 'Download CV', href: '/MyPersonalResume.pdf', current: false, isBtn: true },
+    { name: 'Download CV', href: './MyPersonalResume.pdf', current: false, isBtn: true },
 ];
 
 const socialLinks =
@@ -77,13 +77,14 @@ const Header = () =>
                 <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
                     <DisclosureButton
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    className={classNames(
+                        key={item.name}
+                        href={item.href}
+                        download={item.isBtn ? 'MyPersonalResume.pdf' : undefined}
+                        aria-current={item.current ? 'page' : undefined}
+                        className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium',
+                        'rounded-md px-3 py-2 text-sm font-medium',
+                        item.isBtn ? 'rounded-md border-2 hover:bg-gray-light' : ''
                     )}
                     >
                     {item.name}
