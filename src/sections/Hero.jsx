@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-5">
             <div className="mx-auto flex flex-col items-center">
                 <div className="flex items-center">
-                    <img src="/assets/profile.JPG" className="w-40 h-40 rounded-full" loading="lazy"></img>
+                    <img src="./assets/profile.JPG" className="w-40 h-40 rounded-full" loading="lazy"></img>
                     <div className="pl-5">
                         <strong className="text-gray-300 text-4xl">Aung Zaw Myo</strong>
                         <em> / JeraxTheFk</em>
